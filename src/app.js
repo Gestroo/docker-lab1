@@ -19,6 +19,7 @@ const server = http.createServer((req, res) => {
             throw error
         }
         result.rows.forEach(row => res.write(row.textt+"\n"))
+        res.write("updated output")
         res.end()
     })
 });
