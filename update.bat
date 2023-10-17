@@ -1,4 +1,5 @@
 git pull
 docker-compose down
 docker-compose rm
-docker-compose -d up
+docker image rm lab1-test-container:lab1-test-container
+docker-compose up -d 
